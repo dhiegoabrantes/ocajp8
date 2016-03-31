@@ -1,8 +1,5 @@
 package ocajp8.chapter2.tips;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Tips {
 
 	
