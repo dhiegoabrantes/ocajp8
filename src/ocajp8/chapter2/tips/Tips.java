@@ -5,7 +5,7 @@ public class Tips {
 	
 	/*
 	 * Operators
-	 * 
+	 * d
 	 * Unless overridden with parentheses, Java operators follow order of
 	 * operation, listed in Table 2.1, by decreasing order of operator
 	 * precedence. If two operators have the same level of precedence, then Java
