@@ -16,11 +16,14 @@ public class Tips {
 	 * char 		16-bit Unicode value 			'a'
 	 * 
 	 * - float and double are used for floating-point (decimal) values.
-	 * - A float requires the letter f following the number so Java knows it is a float. Because double is default type for floating-point.
+	 * - A float requires the letter f following the number so Java knows it is a float. 
+	 * 		Because double is default type for floating-point.
 	 * - byte, short, int, and long are used for numbers without decimal points.
 	 * - Each numeric type uses twice as many bits as the smaller similar type. For example,
 	 * short uses twice as many bits as byte does.
 	 * 
+	 * 
+	 * -> Hexadecimal values can be assigned to int and double variables
 	 * 
 	 */
 
@@ -64,6 +67,38 @@ public class Tips {
 	 * ■ Class variables —> in scope from declaration until program ends
 	 */
 	
+	/*
+	 * Importing
+	 * 
+	 * If two classes is in the same package, is not need to import one of them.
+	 * It means:
+	 * 
+	 * package x
+	 * class A
+	 * class B
+	 * 
+	 * class B has a class A object. so, there is no need to import class A 
+	 * because both is in the same package!
+	 * 
+	 * ------------------------------------------------------------------------------------
+	 * 
+	 * Importing by classname takes precedence over wildcard. So:
+	 * 
+	 * Assume packages "x" and "y". Both has MyClass.java
+	 * 
+	 * import x.*;
+	 * import x.y.MyClass;
+	 * 
+	 * It is ok! x.y.MyClass will be imported instead of x.MyClass in order to wildcard "*"
+	 * 
+	 */
+	
+	/*
+	 * Garbage Collector
+	 * 
+	 * - The GC might or might not run
+	 * - The finalize method will be called when object is garbage collected. So, it might or might not run.
+	 */
 	
 	/*
 	 * Exam Essentials

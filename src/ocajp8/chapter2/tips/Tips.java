@@ -8,8 +8,10 @@ public class Tips {
 	 * 
 	 * Unless overridden with parentheses, Java operators follow order of
 	 * operation, listed in Table 2.1, by decreasing order of operator
-	 * precedence. If two operators have the same level of precedence, then Java
-	 * guarantees left-to-right evaluation
+	 * precedence. If two operators have the same level of precedence, 
+	 * then Java guarantees left-to-right evaluation
+	 * 
+	 * (higher level to minor level...)
 	 * 
 	 * Operator								Symbols and examples
 	 * Post-unary operators					expression++, expression--
@@ -51,6 +53,20 @@ public class Tips {
 	 * 
 	 * 4. After all promotion has occurred and the operands have the same data type, 
 	 * the result- ing value will have the same data type as its promoted operands.
+	 * 
+	 * 
+	 * What is the data type of x * y / z?
+	 * 	short x = 14;
+	 * 	float y = 13;
+	 * 	double z = 30;
+	 * 
+	 * 
+	 * In this case, we must apply all of the rules. First, x will automatically be promoted to
+	 * int solely because it is a short and it is being used in an arithmetic binary operation.
+	 * 
+	 * The promoted x value will then be automatically promoted to a float so that it can be
+	 * multiplied with y. The result of x * y will then be automatically promoted to a double,
+	 * so that it can be multiplied with z, resulting in a double value.
 	 */
 	
 	
