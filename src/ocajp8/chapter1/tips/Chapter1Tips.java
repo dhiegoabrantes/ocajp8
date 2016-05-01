@@ -1,6 +1,6 @@
 package ocajp8.chapter1.tips;
 
-public class Tips {
+public class Chapter1Tips {
 
 	/*
 	 * Primitive types
