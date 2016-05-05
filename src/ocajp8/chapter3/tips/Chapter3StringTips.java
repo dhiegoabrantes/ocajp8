@@ -247,6 +247,22 @@ public class Chapter3StringTips {
 	 * 
 	 * 		- The exam creators will try to trip you up on this. As we add and remove characters, their indexes change.
 	 * 
+	 * 
+	 * 	- When use append or insert, the new capacity is ensured:
+     * 		//This implements the expansion semantics of ensureCapacity with no size check or synchronization.
+     * 
+     *		void expandCapacity(int minimumCapacity) {
+     *			int newCapacity = value.length * 2 + 2;    <---- the actual size is multiplied by 2 and added 2
+     *			if (newCapacity - minimumCapacity < 0)
+     *				newCapacity = minimumCapacity;
+     *			if (newCapacity < 0) {
+     *				if (minimumCapacity < 0) // overflow
+     *					throw new OutOfMemoryError();
+     *				newCapacity = Integer.MAX_VALUE;
+     *			}
+     *			value = Arrays.copyOf(value, newCapacity);
+     *		}
+	 * 
 	 *  
 	 *  . delete() and deleteCharAt()
 	 *  	The delete() method is the opposite of the insert() method. 
